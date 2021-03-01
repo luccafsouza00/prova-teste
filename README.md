@@ -1,5 +1,6 @@
 # prova-teste
 
-- chromedriver
-- dependencias maven
+Desafio WEB:
+- teste foi relizado no google chrome, portanto é necessario a instalação do chromedriver.
 - 
+ 
