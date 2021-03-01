@@ -4,7 +4,7 @@ Desafio WEB(automacao.shoestock):
 - Teste foi relizado no google chrome, portanto é necessário a instalação do chromedriver.
 - Foi utilizado selenium e cucumber para execução do teste
 - é necessario baixar as dependecias maven no pom.xml
-- feature do cucumber está localizada em resources
+- feature do cucumber está localizada em src/test/resources/features
 - teste efetuado pelo cucumber
  
 Desafio API
