@@ -55,7 +55,7 @@ public class Metodos {
 
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-		String nomeProduto = driver.findElement(By.cssSelector("h3[qa-auto=product-name]")).getText();
+		String nomeProduto = driver.findElement(elemento).getText();
 		assertEquals(nomeProduto, palavra);
 	}
 	
