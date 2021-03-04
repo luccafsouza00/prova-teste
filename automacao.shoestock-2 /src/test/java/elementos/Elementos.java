@@ -23,12 +23,22 @@ public class Elementos {
 	public By getValidaProduto() {
 		return validaProduto;
 	}
+	
+	
+
+	public By getCookies() {
+		return cookies;
+	}
+
+
 
 	private By buscar = By.id("search-input");
 
 	private By produto = By.cssSelector("#item-list > div.wrapper > div:nth-child(1)");
 
 	private By tamanho = By.cssSelector("a[class=\"product-item\"]");
+	
+	private By cookies = By.cssSelector("body > section > div > div.cookie-notification-button");
 
 	private By comprar = By.id("buy-button-now");
 

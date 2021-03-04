@@ -26,7 +26,9 @@ public class Test {
 		metodo.submit(elemento.getBuscar());
 		metodo.clickar(elemento.getProduto());
 		metodo.clickar(elemento.getTamanho());
+		metodo.clickar(elemento.getCookies());
 		metodo.clickar(elemento.getComprar());
+		
 	}
 
 	@Then("^valido os produtos na tela de pagamento$")

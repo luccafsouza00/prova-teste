@@ -23,22 +23,20 @@ public class Metodos {
 		driver = new ChromeDriver();
 		driver.get("https://www.shoestock.com.br");
 		driver.manage().window().maximize();
+		
 
 	}
 
-	public void digitar(By elemento, String texto) {
+	public void digitar(By elemento, String texto) throws InterruptedException {
 		
+		Thread.sleep(2000);
+		WebElement buscar = driver.findElement(elemento);
+		buscar.sendKeys(texto);
+
+    }
 		
 
-		try {
-			WebElement busca = driver.findElement(elemento);
-			busca.sendKeys(texto);
-		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
-			WebElement busca = driver.findElement(elemento);
-			busca.sendKeys(texto);
-		}
-
-	}
+	
 
 	public void submit(By elemento) {
 		driver.findElement(elemento).submit();
