@@ -23,20 +23,16 @@ public class Metodos {
 		driver = new ChromeDriver();
 		driver.get("https://www.shoestock.com.br");
 		driver.manage().window().maximize();
-		
 
 	}
 
 	public void digitar(By elemento, String texto) throws InterruptedException {
-		
+
 		Thread.sleep(2000);
 		WebElement buscar = driver.findElement(elemento);
 		buscar.sendKeys(texto);
 
-    }
-		
-
-	
+	}
 
 	public void submit(By elemento) {
 		driver.findElement(elemento).submit();
@@ -56,14 +52,13 @@ public class Metodos {
 		String nomeProduto = driver.findElement(elemento).getText();
 		assertEquals(nomeProduto, palavra);
 	}
-	
-	
-	public void screenShot( ) throws IOException {
+
+	public void screenShot() throws IOException {
 
 		TakesScreenshot scrShot = ((TakesScreenshot) driver);
 		File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
 		File destFile = new File("./src/evidencias/" + "produto.png");
-        FileUtils.copyFile(srcFile, destFile);
+		FileUtils.copyFile(srcFile, destFile);
 
 	}
 

@@ -1,8 +1,5 @@
 package excuta;
 
-
-
-
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -27,7 +24,6 @@ import cucumber.api.junit.Cucumber;
 		monochrome = true, dryRun = false
 
 )
-
 
 public class Runner {
 

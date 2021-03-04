@@ -9,11 +9,8 @@ import metodos.Metodos;
 
 public class Test {
 
-	
 	Metodos metodo = new Metodos();
 	Elementos elemento = new Elementos();
-	
-
 
 	@Given("^que esteja \"([^\"]*)\"$")
 	public void que_esteja(String site) throws Throwable {
@@ -28,7 +25,7 @@ public class Test {
 		metodo.clickar(elemento.getTamanho());
 		metodo.clickar(elemento.getCookies());
 		metodo.clickar(elemento.getComprar());
-		
+
 	}
 
 	@Then("^valido os produtos na tela de pagamento$")
@@ -36,8 +33,7 @@ public class Test {
 		metodo.validarProduto(elemento.getValidaProduto(), "Bota Couro Shoestock Cano Curto Travel Feminina");
 		metodo.screenShot();
 		metodo.fecharNavegador();
-  
+
 	}
-	
-	
+
 }
