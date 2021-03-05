@@ -3,8 +3,7 @@ package teste;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import elementos.Elementos;
-
+import elementoss.Elementos;
 import metodos.Metodos;
 
 public class Test {

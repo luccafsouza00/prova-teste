@@ -1,9 +1,9 @@
-package elementos;
+package elementoss;
 
 import org.openqa.selenium.By;
 
 public class Elementos {
-	
+
 	public By getBuscar() {
 		return buscar;
 	}
@@ -45,3 +45,4 @@ public class Elementos {
 	private By validaProduto = By.cssSelector("h3[qa-auto=product-name]");
 
 }
+
