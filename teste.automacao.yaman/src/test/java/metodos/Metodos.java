@@ -53,11 +53,11 @@ public class Metodos {
 		assertEquals(nomeProduto, palavra);
 	}
 
-	public void screenShot() throws IOException {
+	public void screenShot(String nome) throws IOException {
 
 		TakesScreenshot scrShot = ((TakesScreenshot) driver);
 		File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
-		File destFile = new File("./src/evidencias/" + "produto.png");
+		File destFile = new File("./src/evidencias/" + nome+ ".png");
 		FileUtils.copyFile(srcFile, destFile);
 
 	}

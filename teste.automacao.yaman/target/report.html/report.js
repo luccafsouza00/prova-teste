@@ -51,21 +51,21 @@ formatter.match({
   "location": "Test.que_esteja(String)"
 });
 formatter.result({
-  "duration": 15713408094,
+  "duration": 7899289814,
   "status": "passed"
 });
 formatter.match({
   "location": "Test.realize_uma_busca_de_produto()"
 });
 formatter.result({
-  "duration": 7167518037,
+  "duration": 9450346197,
   "status": "passed"
 });
 formatter.match({
   "location": "Test.valido_os_produtos_na_tela_de_pagamento()"
 });
 formatter.result({
-  "duration": 4990642378,
+  "duration": 4903135439,
   "status": "passed"
 });
 });
