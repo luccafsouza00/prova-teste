@@ -21,7 +21,7 @@ public class Metodos {
 	public void abrirSite(String site) {
 		System.setProperty("webdriver.chrome.driver", "/Users/luccasouza/Documents/Driver/chromedriver");
 		driver = new ChromeDriver();
-		driver.get("https://www.shoestock.com.br");
+		driver.get(site);
 		driver.manage().window().maximize();
 
 	}
