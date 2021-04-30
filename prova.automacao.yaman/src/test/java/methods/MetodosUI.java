@@ -53,9 +53,9 @@ public class MetodosUI {
 
 	}
 
-	public void validarProduto(By elemento, String palavra) {
+	public void validarProduto(By elemento, String palavra) throws InterruptedException {
 
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		Thread.sleep(4000);
 
 		String nomeProduto = driver.findElement(elemento).getText();
 		assertEquals(nomeProduto, palavra);
@@ -75,7 +75,7 @@ public class MetodosUI {
 	}
 	
 
-	// Desafio API
+
 	
 
 

@@ -31,7 +31,8 @@ public class Test {
 	}
 
 	@Then("valido os produtos na tela de pagamento")
-	public void valido_os_produtos_na_tela_de_pagamento() throws IOException {
+	public void valido_os_produtos_na_tela_de_pagamento() throws IOException, InterruptedException {
+		
 		metodoUi.validarProduto(elemento.getValidaProduto(), "Bota Coturno Shoestock Couro Fivelas Feminina");
 		metodoUi.screenShot("produto");
 		metodoUi.fecharNavegador();
