@@ -22,6 +22,7 @@ public class Test {
 
 	@When("realize uma busca de produto")
 	public void realize_uma_busca_de_produto() throws InterruptedException {
+		metodoUi.pausa(2000);
 		metodoUi.digitar(elemento.getBuscar(), "bota");
 		metodoUi.submit(elemento.getBuscar());
 		metodoUi.clickar(elemento.getProduto());
@@ -33,6 +34,7 @@ public class Test {
 	@Then("valido os produtos na tela de pagamento")
 	public void valido_os_produtos_na_tela_de_pagamento() throws IOException, InterruptedException {
 		
+		metodoUi.pausa(4000);
 		metodoUi.validarProduto(elemento.getValidaProduto(), "Bota Coturno Shoestock Couro Fivelas Feminina");
 		metodoUi.screenShot("produto");
 		metodoUi.fecharNavegador();

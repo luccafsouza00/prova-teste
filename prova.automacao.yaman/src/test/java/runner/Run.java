@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		features ="src/test/resources/features",
 		glue = "tests",
 		tags = "@executa and not @nexecuta",
-		plugin = {"pretty","html:target/report.html"},
+		plugin = {"pretty","html:target/report.html", "json:target/cucumber.json"},
 		monochrome = true,
 		dryRun = false
 		)

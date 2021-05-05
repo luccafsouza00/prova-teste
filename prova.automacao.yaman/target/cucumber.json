@@ -1,0 +1,204 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Acessar api",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6110000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que eu acesse a api get para consultar profissional",
+            "match": {
+              "location": "tests.Test.que_eu_acesse_a_api_get_para_consultar_profissional()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T14:21:41.212Z",
+        "line": 11,
+        "name": "Validar o status code",
+        "description": "",
+        "id": "buscar-profissional;validar-o-status-code",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "valido o status code do retorno",
+            "match": {
+              "location": "tests.Test.valido_o_status_code_do_retorno()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@executa"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Acessar api",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 956000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que eu acesse a api get para consultar profissional",
+            "match": {
+              "location": "tests.Test.que_eu_acesse_a_api_get_para_consultar_profissional()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T14:21:47.917Z",
+        "line": 14,
+        "name": "Validar body response estrutura lista campo name",
+        "description": "",
+        "id": "buscar-profissional;validar-body-response-estrutura-lista-campo-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1268000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "valido o nome \"Professional\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Professional\"",
+                  "offset": 14
+                }
+              ],
+              "location": "tests.Test.valido_o_nome(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@executa"
+          }
+        ]
+      }
+    ],
+    "name": "Buscar profissional",
+    "description": "  Como usuario quero validar o busca do profissional via api",
+    "id": "buscar-profissional",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/desafioAPI.feature",
+    "tags": [
+      {
+        "name": "@executa",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-05T14:21:50.154Z",
+        "line": 8,
+        "name": "Validação de produtos",
+        "description": "",
+        "id": "automação-na-shoestock;validação-de-produtos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5189000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que esteja \"https://www.shoestock.com.br\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.shoestock.com.br\"",
+                  "offset": 11
+                }
+              ],
+              "location": "tests.Test.que_esteja(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7253000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "realize uma busca de produto",
+            "match": {
+              "location": "tests.Test.realize_uma_busca_de_produto()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4526000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "valido os produtos na tela de pagamento",
+            "match": {
+              "location": "tests.Test.valido_os_produtos_na_tela_de_pagamento()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@executa"
+          }
+        ]
+      }
+    ],
+    "name": "Automação na Shoestock",
+    "description": "  Eu como usuário quero realizar pesquisa de produtos ",
+    "id": "automação-na-shoestock",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/shoestock-web.feature",
+    "tags": [
+      {
+        "name": "@executa",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

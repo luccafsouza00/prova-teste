@@ -36,7 +36,6 @@ public class MetodosUI {
 
 	public void digitar(By elemento, String texto) throws InterruptedException {
 
-		Thread.sleep(2000);
 		WebElement buscar = driver.findElement(elemento);
 		buscar.sendKeys(texto);
 
@@ -55,10 +54,15 @@ public class MetodosUI {
 
 	public void validarProduto(By elemento, String palavra) throws InterruptedException {
 
-		Thread.sleep(4000);
+		
 
 		String nomeProduto = driver.findElement(elemento).getText();
 		assertEquals(nomeProduto, palavra);
+	}
+	
+	public void pausa(int tempo) throws InterruptedException {
+		
+		Thread.sleep(tempo);
 	}
 
 	public void screenShot(String nome) throws IOException {
